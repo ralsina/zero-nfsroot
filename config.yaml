@@ -1,0 +1,15 @@
+# 1 for the 1st zero, 2 for the second and so on
+number: 3
+
+# Network configuration
+base_ip_address: '192.168.0.200'
+default_gw: '192.168.0.1'
+netmask: '255.255.255.0'
+netmask_bits: 24
+host_prefix: 'p'
+nameservers: '8.8.8.8 1.1.1.1 9.9.9.9'
+
+# NFS root config
+nfs_root_path_prefix: '/zeros/'
+nfs_server_address: '192.168.0.72'
+

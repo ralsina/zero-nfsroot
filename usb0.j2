@@ -1,0 +1,7 @@
+{% set ip_base = base_ip_address.split('.')[-1] | int %}
+auto usb0
+allow-hotplug usb0
+iface usb0 inet static
+  address {{'.'.join(base_ip_address.split('.')[:-1])}}.{{ip_base+number}}/{{netmask_bits}}
+  gateway {{default_gw}}
+  dns-nameservers {{nameservers}}
